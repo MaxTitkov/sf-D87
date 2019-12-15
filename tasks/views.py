@@ -9,14 +9,6 @@ from datetime import datetime
 
 def index(request):
 
-    # 1st version
-    # counts = {t.name: random.randint(1, 100) for t in Tag.objects.all()}
-
-    # 2nd version
-    # counts = {t.name: t.taggit_taggeditem_items.count()
-    # for t in Tag.objects.all()}
-
-    # 3rd version
     from django.db.models import Count
     from tasks.signals import all_priority_counter
 
