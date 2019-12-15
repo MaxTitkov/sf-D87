@@ -8,7 +8,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'please-set-secret-key-through-
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
 ALLOWED_HOSTS = [
-    'radiant-bayou-97645.herokuapp.com',
+    'https://sf-d87.herokuapp.com/',
     '127.0.0.1',
 ]
 
